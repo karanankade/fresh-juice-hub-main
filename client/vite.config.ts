@@ -7,6 +7,7 @@ export default defineConfig({
     host: "::",
     port: 8080,
     hmr: { overlay: false },
+    allowedHosts: ["all"],
     proxy: {
       "/api": {
         target: "http://localhost:5000",
