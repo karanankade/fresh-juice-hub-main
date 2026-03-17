@@ -16,6 +16,10 @@ app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+// Root health check
+app.get("/", (req, res) => {
+  res.json({ status: "ok", message: "Nath Krupa Raswanti Gruh API is running" });
+});
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/blogs", require("./routes/blogs"));
 app.use("/api/gallery", require("./routes/gallery"));
