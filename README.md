@@ -270,4 +270,4 @@ npm run dev
 
 ## 👤 Author
 
-Built and maintained by **Rushikesh Borade**
+Built and maintained by **Karan Ankade**
